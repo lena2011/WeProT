@@ -1,0 +1,21 @@
+.slide-image {
+  width: 100%;
+}
+
+button {
+  margin: 10px;
+}
+
+.slide {
+  margin: 5px 10px;
+}
+
+.slide-left {
+  float: left;
+  width: 20%;
+}
+
+.slide-right {
+  float: left;
+  width: 80%;
+}

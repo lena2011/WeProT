@@ -1,0 +1,32 @@
+<swiper indicator-dots='{{indicatorDots}}' interval='{{interVal}}' duration='{{duration}}' autoplay='{{autoPlay}}' circular='true'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src='{{item}}' mode='aspectFit' class="slide-image"></image>
+    </swiper-item>
+  </block>
+
+</swiper>
+
+<view class='slide' style='margin-top:20px;'>
+  <text style="float:left">是否显示轮播点</text>
+  <switch style="float:right" bindchange='changeIndicatorDots'></switch>
+</view>
+<view style='clear:both'></view>
+<view class='slide'>
+  <text style="float:left">是否自动播放</text>
+  <switch style="float:right" bindchange='changeAutoPlay'></switch>
+</view>
+<view style='clear:both'></view>
+<view class='slide'>
+  <text class='slide-left'>播放间隔</text>
+  <view class='slide-right'>
+    <slider max='5000' step='1000' bindchange='changeInterval' show-value='true' value='{{interVal}}'></slider>
+  </view>
+</view>
+<view style='clear:both'></view>
+<view class='slide'>
+  <text class='slide-left'>滑动动画时长</text>
+  <view class='slide-right'>
+    <slider max='2000' step='500' bindchange='changeDuration' show-value='true' value='{{duration}}'></slider>
+  </view>
+</view>

@@ -7,6 +7,20 @@ Page({
     defaultSize: 'default',
     showmodal: false
   },
+  // 到滚动页面
+  toSwiper:function(){
+    wx.navigateTo({
+      url: '/pages/index/swiper/swiper?title=swiper',
+      success:function(){
+        // 接口调用成功
+      }
+  })
+  },
+  toAddress:function(){
+wx.navigateTo({
+  url: '/pages/index/address/address?title=address',
+})
+  },
   onReady: function () {
     var context = wx.createCanvasContext('firstCanvas')
 
