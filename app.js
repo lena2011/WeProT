@@ -5,11 +5,16 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    wx.getStorageInfo({
+      success:function(res){
+    console.log(res)
+      }
+    })
     // 登录
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log(res.code)
       }
     })
     // 获取用户信息

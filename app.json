@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/mine/mine",
     "pages/index/index",
     "pages/index/swiper/swiper",
     "pages/logs/logs",
@@ -24,8 +25,8 @@
         "selectedIconPath": "image/icon_index_sel.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志",
+        "pagePath": "pages/mine/mine",
+        "text": "我",
         "iconPath": "image/icon_API.png",
         "selectedIconPath": "image/icon_API_sel.png"
       }
